@@ -10,6 +10,7 @@ body {
     min-height: 100vh;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 h1 {
     font-size: 4.2rem;
@@ -111,6 +112,17 @@ h1 {
 .anne {
     margin-top: 40px;
 }
+.attribution {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    font-size: 12px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
 @media (max-width: 1170px) {
     .container {
         max-width: 600px;
