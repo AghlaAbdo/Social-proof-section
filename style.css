@@ -33,6 +33,21 @@ h1 {
     width: 24px;
     padding: 2px;
 }
+.top-img {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.bottom-img {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.top-img-mob, .bottom-img-mob {
+    display: none;
+}
 .container {
     max-width: 1400px;
     margin: auto 20px;
@@ -186,5 +201,22 @@ h1 {
         width: 100%;
         padding: 16px 8px;
         margin: auto 32px;
+    }
+    .top-img, .bottom-img {
+        display: none;
+    }
+    .top-img-mob {
+        display: block;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
+    .bottom-img-mob {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: -1;
     }
 }
